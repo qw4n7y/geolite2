@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cd /var/www && PORT=80 pm2-docker ecosystem.config.js
