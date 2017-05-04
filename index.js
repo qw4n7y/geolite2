@@ -24,7 +24,7 @@ app.get('/', function (req, res) {
       lng: result.location.longitude
     })
   } else {
-    res.status(404).end();
+    res.status(204).end();
   }
 });
 
