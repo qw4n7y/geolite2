@@ -21,7 +21,8 @@ app.get('/', function (req, res) {
     res.json({
       ip: ip,
       lat: result.location.latitude,
-      lng: result.location.longitude
+      lng: result.location.longitude,
+      country_code: result.country.iso_code
     })
   } else {
     res.status(204).end();
