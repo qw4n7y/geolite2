@@ -8,9 +8,9 @@ module.exports = {
     {
       name      : 'APP',
       script    : 'index.js',
-      watch: false,
+      watch:    false,
       exec_mode   : 'cluster',
-      instances   : 2,
+      instances   : 8,
       log_date_format : "YYYY-MM-DD HH:mm:ss",
       error_file  : 'logs/node.stderr.log',
       out_file    : 'logs/node.stdout.log',

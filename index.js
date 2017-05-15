@@ -22,7 +22,8 @@ app.get('/', function (req, res) {
       ip: ip,
       lat: result.location.latitude,
       lng: result.location.longitude,
-      country_code: result.country.iso_code
+      country_code: result.country.iso_code,
+      city: (result.city !== undefined) ? result.city.names['en'] : null
     })
   } else {
     res.status(204).end();
