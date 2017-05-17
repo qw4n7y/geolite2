@@ -14,8 +14,8 @@ RUN mkdir -p /var/www
 ADD docker/services/app.runit /etc/service/app/run
 RUN chmod +x /etc/service/app/run
 
-COPY update-geolite2-city.sh /etc/cron.weekly/update-geolite2-city
-RUN /etc/cron.weekly/update-geolite2-city
+COPY update-geolite2-city.sh /etc/cron.daily/update-geolite2-city
+RUN /etc/cron.daily/update-geolite2-city
 
 WORKDIR /var/www
 
